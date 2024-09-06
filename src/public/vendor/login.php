@@ -1,8 +1,13 @@
 <?php
 session_start();
 require_once 'connect.php';
+
 global $conn;
-define('SMARTCAPTCHA_SERVER_KEY', 'ysc2_MH2TbsWWTbTyzTB4Vl5P5Gv1VNd76N1OMvnGTA3519540bcd');
+
+
+define('SMARTCAPTCHA_SERVER_KEY', '<Вставьте ключ сервера сюда>');
+
+
 
 function check_captcha($token)
 {
